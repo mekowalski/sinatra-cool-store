@@ -126,4 +126,8 @@ DEPENDENCIES
   tux
 
 BUNDLED WITH
+<<<<<<< HEAD
    1.13.6
+=======
+   1.14.6
+>>>>>>> 4c27084634df21f9a18bf5c67b2331c206daae38

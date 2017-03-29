@@ -11,6 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 0) do
+=======
+ActiveRecord::Schema.define(version: 20170329185501) do
+
+  create_table "carts", force: :cascade do |t|
+    t.string  "status",  default: "pending"
+    t.integer "user_id"
+  end
+
+  create_table "items", force: :cascade do |t|
+    t.string  "name"
+    t.integer "inventory"
+    t.integer "price"
+    t.integer "cart_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.string "status",     default: "Non-Premium"
+  end
+>>>>>>> 4c27084634df21f9a18bf5c67b2331c206daae38
 
 end
